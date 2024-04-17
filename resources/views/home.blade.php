@@ -8,7 +8,7 @@
     <title>Home</title>
 </head>
 <body>
-    {{-- buat set grid --}}
+    {{-- pembagian kelas grid--}}
     <div class="website-body">
         {{-- bagian header --}}
         <div class="header">
@@ -33,13 +33,33 @@
                 </div>
             </div>
         </div>
-        {{-- tabel --}}
+        {{-- grid tabel --}}
         <div class="main">
             @include('partials.tables')
         </div>
-        {{-- search bar and calendar --}}
+        {{-- grid search bar & calendar --}}
         <div class="secondary">
-            <input type="text">
+            <input class="search-bar" type="text">
+            @include('partials.calendar')
+            <div class="categories">
+                <p class="cat-title">Categories</p>
+                <div class="cat-holder">
+                    <p class="cat-text">External</p>
+                    <div class="cat-exter"></div>
+                </div>
+                <div class="cat-holder">
+                    <p class="cat-text">Internal</p>
+                    <div class="cat-inter"></div>
+                </div>
+                <div class="cat-holder">
+                    <p class="cat-text">Maintanance</p>
+                    <div class="cat-maint"></div>
+                </div>
+                <div class="cat-holder">
+                    <p class="cat-text">Zoom</p>
+                    <div class="cat-zoom"></div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
