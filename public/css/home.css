@@ -1,5 +1,13 @@
 :root{
     --primaryColor: rgba(1,39,145,255);
+    --externalMain: rgba(100,203,192,255);
+    --externalSecond:none;
+    --internalMain:rgba(45,201,113,255);
+    --internalSecond:none;
+    --maintananceMain:rgba(220,74,64,255);
+    --maintananceSecond:none;
+    --zoomMain:rgba(242,187,7,255);
+    --zoomSecond:none;
 }
 
 body{
@@ -73,6 +81,8 @@ body{
     .search-bar-holder{
         display: flex;
         width: 100%;
+        padding-bottom: 27px;
+        border-bottom: solid  3px white;
     }
         .search-bar{
             flex: 1;
@@ -109,23 +119,23 @@ body{
             .cat-exter{
                 height: 5px;
                 width: 100%;
-                background-color: rgba(100,203,192,255);
+                background-color: var(--externalMain);
             }
 
             .cat-inter{
                 height: 5px;
                 width: 100%;
-                background-color: rgba(45,201,113,255);
+                background-color: var(--internalMain);
             }
 
             .cat-maint{
                 height: 5px;
                 width: 100%;
-                background-color: rgba(220,74,64,255);
+                background-color: var(--maintananceMain)
             }
 
             .cat-zoom{
                 height: 5px;
                 width: 100%;
-                background-color: rgba(242,187,7,255);
+                background-color: var(--zoomMain);
             }
