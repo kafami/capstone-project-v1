@@ -35,11 +35,15 @@
         </div>
         {{-- grid tabel --}}
         <div class="main">
+            {{-- manggil table --}}
             @include('partials.tables')
         </div>
         {{-- grid search bar & calendar --}}
         <div class="secondary">
-            <input class="search-bar" type="text">
+            <div class="search-bar-holder">
+                <input class="search-bar" type="text">
+            </div>
+            {{-- manggil calendar --}}
             @include('partials.calendar')
             <div class="categories">
                 <p class="cat-title">Categories</p>
@@ -63,4 +67,6 @@
         </div>
     </div>
 </body>
+
+
 </html>
