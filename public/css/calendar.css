@@ -29,6 +29,7 @@ header .icons span{
   margin-right: -10px;
 }
 header .icons span:hover{
+  transition: 0.6s;
   background: rgba(201, 201, 201, 0.45);
 }
 header .current-date{
@@ -84,5 +85,6 @@ header .current-date{
   background: #0295fd;
 }
 .days li:not(.active):hover::before{
+  transition: 0.6s;
   background: rgba(39, 46, 245, 0.29)
 }
