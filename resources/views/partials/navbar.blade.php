@@ -10,13 +10,13 @@
     </div>
     <div class="navbarMenu">
         <div class="navbarMenuOpt">
-            <p>Room Information</p>
+            <a href="/"><p>Room Information</p></a>
         </div>
         <div class="navbarMenuOpt">
-            <p>Calendar</p>
+            <a href=""><p>Calendar</p></a>
         </div>
         <div class="navbarMenuOpt">
-            <p>Administrator</p>
+            <a href="/login"><p>Login</p></a>
         </div>
     </div>
 </div>
