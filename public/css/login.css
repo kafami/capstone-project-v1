@@ -17,6 +17,11 @@ html, body{
     align-items: center;
 }
 
+.navbar-holder{
+    border-bottom: solid 3px var(--primaryColor);
+    padding-bottom: 6px;
+}
+
 /* .login-holder{
     display: flex;
     align-items: center;
