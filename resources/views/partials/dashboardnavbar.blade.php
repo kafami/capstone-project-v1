@@ -3,14 +3,22 @@
     <div class="dash-nav">
         <img class="dashNavicons" src="{{ asset('img/dashboard.svg') }}" alt="">
         <p class="navText">Dashboard</p>
+
+
         <div class="dashboard-option">
-            <img class="dashNavicons" src="{{ asset('img/home.svg') }}" alt=""><p class="navText">Home</p>
+            <img class="dashNavicons" src="{{ asset('img/home.svg') }}" alt=""><a href="/"><p class="navText">
+                Home
+            </p></a>
         </div>
         <div class="dashboard-option">
-            <img class="dashNavicons" src="{{ asset('img/calendar.svg') }}" alt=""><p class="navText">Konfirmasi Request</p>
+            <img class="dashNavicons" src="{{ asset('img/calendar.svg') }}" alt=""><a href="/konfirmasi"><p class="navText">
+                Konfirmasi Request
+            </p></a>
         </div>
         <div class="dashboard-option">
-            <img class="dashNavicons" src="{{ asset('img/logout.svg') }}" alt=""><a href="/"><p class="navText">Logout</p></a>
+            <img class="dashNavicons" src="{{ asset('img/logout.svg') }}" alt=""><a href="/"><p class="navText">
+                Logout
+            </p></a>
         </div>
     </div>
 </div>

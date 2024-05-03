@@ -8,20 +8,14 @@ a {
 }
 
 .dash-nav {
-    width: 250px;
     background-color: var(--primaryColor);
     color: var(--textColor);
-    padding: 20px;
+    width: 100%;
 }
 
 .dashboard-option {
     display: flex;
-    margin-top: 15px;
-    transition: 1s;
-}
-
-.dashboard-option :hover{
-    background-color: white;
+    width: 100%;
 }
 
 .dashboard-option p {
