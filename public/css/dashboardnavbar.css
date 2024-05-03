@@ -1,0 +1,45 @@
+a {
+    text-decoration: none;
+}
+
+.dash-container {
+    display: flex;
+    height: 100%;
+}
+
+.dash-nav {
+    width: 250px;
+    background-color: var(--primaryColor);
+    color: var(--textColor);
+    padding: 20px;
+}
+
+.dashboard-option {
+    display: flex;
+    margin-top: 15px;
+    transition: 1s;
+}
+
+.dashboard-option :hover{
+    background-color: white;
+}
+
+.dashboard-option p {
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dash-main {
+    flex: 1;
+    background-color: var(--bgColor);
+    padding: 20px;
+}
+
+.dash-main p {
+    margin: 0;
+}
+
+.navText{
+    color: white;
+}

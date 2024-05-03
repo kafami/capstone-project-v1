@@ -24,3 +24,16 @@ Route::get('/login', function(){
         "title" => "Login"
     ]);
 });
+
+
+Route::get('/dashboard',function(){
+    return view('dashboardhome',[
+        "title" => "Dashboard"
+    ]);
+});
+
+Route::get('/konfirmasi',function(){
+    return view('dashboardkonfirmasi',[
+        "title" => "Konfirmasi"
+    ]);
+});
