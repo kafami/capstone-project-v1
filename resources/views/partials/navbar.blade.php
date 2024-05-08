@@ -21,7 +21,7 @@
         </span>
         
         <div class="calendarOpt">
-            <a href=""><p>Calendar</p></a>
+            <a href="/peminjaman-ruangan"><p>Peminjaman Ruangan</p></a>
         </div>
 
         <div class="navbarMenuOpt">
@@ -29,13 +29,16 @@
             <a class="navbar-icon" href="/login"><p>Login</p></a>
         </div>
     </div>
+    <div class="profile-dropdown">
+        <img class="profile-img" src="{{ asset('img/kaffa.jpg') }}" alt="Profile Image">
+        <div class="profile-dropdown-content">
+          <a href="#">Edit Profile</a>
+          <a href="/status-ruangan">Status Ruangan</a>
+          <a href="#">Logout</a>
+        </div>
+    </div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-    // When the document is ready
-    $(document).ready(function() {
-        // Update date, month, and year
-        $('#date').text(new Date().getDate());
-    });
+<script src="{{ asset('js/navbar.js') }}">
 </script>

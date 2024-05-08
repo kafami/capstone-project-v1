@@ -13,19 +13,21 @@ function updateTable() {
     // Populate table headers and body based on selected view
     if (selectedView === "day") {
         // Populate for day view (rooms as row headers and hours as column headers)
-        headerRow.insertAdjacentHTML("beforeend", "<th>Hour</th>");
-        for (var hour = 1; hour <= 24; hour++) {
-            headerRow.insertAdjacentHTML("beforeend", "<th>" + hour + "</th>");
+        headerRow.insertAdjacentHTML("beforeend", "<th>Jam</th>");
+        for (var room = 1; room <= 5; room++) {
+            headerRow.insertAdjacentHTML("beforeend", "<th>Room " + room + "</th>");
         }
 
-        for (var room = 1; room <= 5; room++) {
-            var row = "<tr><td>Room " + room + "</td>";
-            for (var hour = 1; hour <= 24; hour++) {
+        for (var hour = 8; hour <= 18; hour++) {
+            var row = "<tr><td>" + hour + "</td>";
+            for (var room = 1; room <= 5; room++) {
                 row += "<td></td>"; // Empty cells for availability
             }
             row += "</tr>";
             tableBody.insertAdjacentHTML("beforeend", row);
         }
+
+
     } else if (selectedView === "week") {
         // Populate for week view (5 rooms as column headers and days of the week as row headers)
         var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];

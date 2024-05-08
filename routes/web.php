@@ -37,3 +37,15 @@ Route::get('/konfirmasi',function(){
         "title" => "Konfirmasi"
     ]);
 });
+
+Route::get('/peminjaman-ruangan',function(){
+    return view('peminjaman',[
+        "title" => "Peminjaman Ruangan"
+    ]);
+});
+
+Route::get('/status-ruangan',function(){
+    return view('statusruang',[
+        "title" => "Status Ruangan"
+    ]);
+});

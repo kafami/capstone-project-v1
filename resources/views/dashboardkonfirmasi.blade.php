@@ -41,6 +41,21 @@
                     <input type="checkbox">
                 </div>
             </div>
+
+            <div class="konfirmasi-ruangan">
+                <div>
+                    <p class="ruangan">ruangan A102</p>
+                    <p class="peminjam">Elmar</p>
+                    <div class="date-time">
+                        <p class="date">1/13/24</p>
+                        <p class="time">16:30 - 18:00</p>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <input type="checkbox">
+                </div>
+            </div>
         </div>
 
 </body>
