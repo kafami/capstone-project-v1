@@ -5,8 +5,8 @@
     <div class="logo">
         <img src="{{ asset('img/logoUndip.png') }}" class="logoUndip" alt="">
         <div class="logoTextContainer">
-            <p class="logoText">FAKULTAS TEKNIK</p>
-            <p class="logoText">UNIVERSITAS DIPONEGORO</p>
+            <p class="logoText-fakultas">FAKULTAS TEKNIK</p>
+            <p class="logoText-dipo">UNIVERSITAS DIPONEGORO</p>
         </div>
     </div>
     <div class="navbarMenu">

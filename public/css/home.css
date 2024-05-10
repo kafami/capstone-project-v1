@@ -104,6 +104,7 @@ body{
         display: grid;
         width: 100%;
         flex-grow: 1;
+        max-height: 300px;
     }
         .cat-title{
             color: white;

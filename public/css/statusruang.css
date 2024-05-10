@@ -1,4 +1,19 @@
-/* statusruang.css */
+:root{
+    --primaryColor: rgba(1,39,145,255);
+    --externalMain: rgba(100,203,192,255);
+    --externalSecond:none;
+    --internalMain:rgba(45,201,113,255);
+    --internalSecond:none;
+    --maintananceMain:rgba(220,74,64,255);
+    --maintananceSecond:none;
+    --zoomMain:rgba(242,187,7,255);
+    --zoomSecond:none;
+}
+
+.navbar-holder{
+    border-bottom: solid 3px var(--primaryColor);
+    padding-bottom: 6px;
+}
 
 table {
     width: 100%;
@@ -7,7 +22,8 @@ table {
 }
 
 .header{
-    background-color: blue;
+    background-color: var(--primaryColor);
+    color: white;
 }
 
 th, td {
@@ -18,8 +34,4 @@ th, td {
 
 tr:nth-child(even) {
     background-color: #f2f2f2;
-}
-
-tr:hover {
-    background-color: #ddd;
 }

@@ -11,6 +11,7 @@ function updateTable() {
     tableBody.innerHTML = "";
 
     // Populate table headers and body based on selected view
+    // Populate table headers and body based on selected view
     if (selectedView === "day") {
         // Populate for day view (rooms as row headers and hours as column headers)
         headerRow.insertAdjacentHTML("beforeend", "<th>Jam</th>");
@@ -18,14 +19,32 @@ function updateTable() {
             headerRow.insertAdjacentHTML("beforeend", "<th>Room " + room + "</th>");
         }
 
-        for (var hour = 8; hour <= 18; hour++) {
-            var row = "<tr><td>" + hour + "</td>";
+        for (var hour = 8; hour < 18; hour++) {
+            var hourFormatted = (hour < 10 ? '0' : '') + hour; // Add leading zero if hour is single digit
+            var row = "<tr><td>" + hourFormatted + ":00</td>";
+            for (var room = 1; room <= 5; room++) {
+                row += "<td></td>"; // Empty cells for availability
+            }
+            row += "</tr>";
+            tableBody.insertAdjacentHTML("beforeend", row);
+        
+            row = "<tr><td>" + hourFormatted + ":30</td>";
             for (var room = 1; room <= 5; room++) {
                 row += "<td></td>"; // Empty cells for availability
             }
             row += "</tr>";
             tableBody.insertAdjacentHTML("beforeend", row);
         }
+        
+        // Add the last row for 18:00
+        var lastRow = "<tr><td>18:00</td>";
+        for (var room = 1; room <= 5; room++) {
+            lastRow += "<td></td>"; // Empty cells for availability
+        }
+        lastRow += "</tr>";
+        tableBody.insertAdjacentHTML("beforeend", lastRow);
+        
+    
 
 
     } else if (selectedView === "week") {

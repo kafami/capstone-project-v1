@@ -8,6 +8,7 @@
 .logo {
     display: flex;
     align-items: center;
+    min-width: 230px;
 }
 
 .logoUndip {
@@ -18,7 +19,13 @@
     margin-left: 10px;
 }
 
-.logoText {
+.logoText-fakultas {
+    margin: 0;
+    display: block;
+}
+
+.logoText-dipo {
+    font-size: 12px;
     margin: 0;
     display: block;
 }
