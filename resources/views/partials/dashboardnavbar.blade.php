@@ -19,6 +19,12 @@
             </p></a>
         </div>
         <div class="dashboard-option">
+            <img class="dashNavicons" src="{{ asset('img/user.svg') }}" alt="">
+            <a href="/users"><p class="navText">
+                Users
+            </p></a>
+        </div>
+        <div class="dashboard-option">
             <img class="dashNavicons" src="{{ asset('img/logout.svg') }}" alt="">
             <a href="/"><p class="navText">
                 Logout

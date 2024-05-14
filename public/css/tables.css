@@ -1,3 +1,15 @@
+.select{
+    display: flex;
+}
+
+
+.form-select{
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
 /* Apply general styles to the table */
 #reservationTable {
     border-collapse: collapse;

@@ -17,40 +17,43 @@
         </div>
         {{-- grid tabel --}}
         <div class="main">
-            <div>
-                <form action="/konfirmasi.php">
-                  <label for="ruangan"><p>Pilih ruangan:</p></label>
-                  <select name="ruangan" id="ruangan">
-                    <option value="A201">A201</option>
-                    <option value="A202">A202</option>
-                    <option value="A102">A102</option>
-                    <option value="A101">A101</option>
-                  </select>
-                  <br><br>
-                </form>
-                
-            </div>
-            <div>
-                <form action="/action_page.php">
-                    <label for="bookingdate"><p>Pilih tanggal dan waktu: </p></label>
-                    <input type="datetime-local" id="bookingdate" name="bookingdate">
-                  </form>
-            </div>
-            <div>
-                <p>Acara</p>
-                <input class="nama-acara" type="text">
-            </div>
-            <div>
-                <p>Deskripsi</p>
-                <input class="deskripsi-acara" type="text">
-            </div>
-            <input type="submit">
-            <div>
-                @include('partials.tables')
-            </div>
+            <div class="form-container">
+                <div class="holder">
+                    <div class="data-input">
+                        <div class="date-time">
+                            <form action="/konfirmasi.php" class="class-form">
+                                <label for="ruangan" class="form-label"><p>Pilih ruangan: </p></label>
+                                <select name="ruangan" id="ruangan" class="form-select">
+                                    <option value="A201">A201</option>
+                                    <option value="A202">A202</option>
+                                    <option value="A102">A102</option>
+                                    <option value="A101">A101</option>
+                                </select>
+                            </form>
+        
+                            <form action="/action_page.php" class="date-time-form">
+                                <label for="bookingdate"><p>Pilih tanggal dan waktu: </p></label>
+                                <input type="datetime-local" id="bookingdate" name="bookingdate">
+                            </form>
+                        </div>
+    
+                        <div class="keterangan">
+                            <p>Acara</p>
+                            <input class="nama-acara" type="text">
+                            <p>Deskripsi</p>
+                            <textarea class="deskripsi-acara" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="button-container">
+                            <input type="submit">
+                        </div>
+                    </div>
+                </div>
+                </div>
 
             {{-- manggil table --}}
-            @include('partials.tables')
+            <div class="table-holder">
+                @include('partials.tables')
+            </div>
         </div>
         {{-- grid search bar & calendar --}}
         <div class="secondary">

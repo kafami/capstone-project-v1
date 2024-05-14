@@ -65,36 +65,105 @@ body{
           }
 .main{
   grid-area: main;
+  display: grid;
 }
 
-/* Style the input field */
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.holder{
+  width: 30%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 1rem;
+  border-radius: 10px;
+
+}
+.data-input{
+  display: grid;
+}
+
+.date-time{
+  display: flex;
+  justify-content: space-between;
+}
+
+.keterangan{
+  display: grid;
+}
+
+.class-form {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+.date-time-form{
+  margin-left: 5px;
+}
+
+.form-select::-ms-expand {
+  display: none;
+}
+
+.form-select option {
+  font-size: 16px;
+}
+
+#bookingdate,
+.nama-acara,
+.deskripsi-acara {
+  vertical-align: top;
+}
+
 #bookingdate {
-  padding: 10px;
+  padding: 6px;
   font-size: 16px;
   border: 2px solid #ccc;
   border-radius: 5px;
   outline: none;
-  cursor: pointer; /* Change cursor to pointer on hover */
+  cursor: pointer;
 }
 
 .nama-acara{
-  width: 80%;
+  padding: 1em;
+  width: 93%;
+  outline: none;
+  border: 2px solid #ccc;
+  border-radius: 5px;
 }
 
 .deskripsi-acara{
-  width: 80%;
+  padding: 1em;
+  width: 93%;
   height: 10rem;
-line-height: 1.5;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
 }
 
 .deskripsi-acara[type="text"] {
   text-align: left;
-  padding: 5px; /* Add padding to move text away from top and left edges */
-  box-sizing: border-box; /* Include padding in the total width of the element */
+  padding: 5px;
+  box-sizing: border-box;
+  line-height: 1.2;
 }
 
-/* Style the submit button (optional) */
 input[type=submit] {
+  margin-top: 10px;
   padding: 10px 20px;
   background-color: var(--primaryColor);
   color: white;
@@ -104,12 +173,10 @@ input[type=submit] {
   transition: 0.4s;
 }
 
-/* Change color of submit button on hover */
 input[type=submit]:hover {
   background-color: rgb(114, 114, 235);
 }
 
-/* Adjust the width of the date picker dropdown */
 #bookingdate::-webkit-calendar-picker-indicator {
   width: 32px;
   height: 32px;

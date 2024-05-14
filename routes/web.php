@@ -49,3 +49,9 @@ Route::get('/status-ruangan',function(){
         "title" => "Status Ruangan"
     ]);
 });
+
+Route::get('/users',function(){
+    return view('users',[
+        "title" => "Users"
+    ]);
+});
